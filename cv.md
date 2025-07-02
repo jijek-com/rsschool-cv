@@ -19,7 +19,7 @@ Motivated to learn, grow and excel in it Industry.
 
 ## Education
 
-OmGu, FKN, 2017
+OmGu, FCS, 2017
 
 ____
 
