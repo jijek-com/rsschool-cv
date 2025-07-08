@@ -5,9 +5,218 @@
     <meta name="viewport" content="width=device-width">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>CV Eugene Mas</title>
-    <link rel="stylesheet" href="./style.css">
+
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
+
+    <div class="wrapper">
+
+    <div class="sidebar">
+
+        <section class="profile">
+            <div class="profile__container">
+                <div class="profile__img">
+                    <img src="./jijek.png" alt="Image Jijekcom">
+                </div>
+                <h1 class="profile__name">
+                    Evgeniia Mas
+                </h1>
+                <h2 class="profile__position">
+                    Frontend developer
+                    <a class="profile__download"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       href="./docs/cv.pdf" download="Evgeniia - frontend developer">
+                        <img src="./images/download.png" alt="icon download" width="24" >
+                    </a>
+                </h2>
+            </div>
+        </section>
+
+        <section class="contacts">
+            <h2 class="contacts__title">Contacts</h2>
+            <ul class="contacts__list">
+                <li class="contacts__list-item">
+                    <a href="https://t.me/JijekCom" target="_blank" class="contacts__link">
+                        <span class="contacts__icon telegram"></span>
+                    </a>
+                </li>
+
+                <li class="contacts__list-item">
+                    <a href="mailto:mas.eug@yandex.ru" class="contacts__link">
+                        <span class="contacts__icon mail"></span>
+                    </a>
+                </li>
+
+                <li class="contacts__list-item">
+                    <a href="https://discordapp.com/users/470303834170851328" target="_blank" class="contacts__link">
+                        <span class="contacts__icon discord"></span>
+                    </a>
+                </li>
+            </ul>
+        </section>
+
+        <section class="skills">
+            <h2 class="skills__title">Skills</h2>
+            <ul class="skills__list">
+                <li class="skills__list-item">Javascript,</li>
+                <li class="skills__list-item">TypeScript,</li>
+                <li class="skills__list-item">Angular,</li>
+                <li class="skills__list-item">GIT</li>
+            </ul>
+        </section>
+
+        <section class="education">
+            <h2 class="education__title">Education</h2>
+            <div class="education__desc">
+                OmGU, FCS, 2017
+            </div>
+        </section>
+
+        <section class="languages">
+            <h2 class="languages__title">Languages</h2>
+            <div class="languages__desc">
+                Russian native, English a2
+            </div>
+        </section>
+    </div>
+
+    <main class="main-content">
+        <header class="header">
+            <nav class="header__menu menu">
+                <ul class="menu__list">
+                    <li class="menu__li">
+                        <a href="#about" class="menu__link">
+                            About
+                        </a>
+                    </li>
+
+                    <li class="menu__li">
+                        <a href="#experience" class="menu__link">
+                            Experience
+                        </a>
+                    </li>
+
+                    <li class="menu__li">
+                        <a href="#examples" class="menu__link">
+                            Examples
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="main-content__max-height">
+            <section class="about" id="about">
+                <h2 class="about__title">About me</h2>
+                <p class="about__text">
+                    Software engineer with 3+ years of experience.
+                    Have developed several android and web apps, that engage customers and deliver business results.
+                    Well-versed in design standards and user preferences.
+                    Enthusiastic frontend development eager to contribute to team success through hard work, attention to detail and excellent organizational skills.
+                    Motivated to learn, grow and excel in it Industry.
+                </p>
+            </section>
+
+            <section class="experience" id="experience">
+                <h2 class="experience__title">Work Experience</h2>
+
+                <div class="experience__item">
+                    <div class="experience__position">MTS &#8226; may 2022 - jun 2023 &#8226; Front end</div>
+
+                    <p class="experience__text">
+                        Developed adaptive and responsive interfaces for various devices using Angular and modern frontend technologies.
+                        Implemented cross-browser, accessible, and user-friendly layouts following BEM methodology and SCSS.
+                        Built complex, reusable components with RxJS, TypeScript, and modular architecture, ensuring scalability and maintainability.
+                        Optimized application performance through Lazy Loading, OnPush Change Detection, and AOT compilation.
+                        Worked with Material Design, integrated ApexCharts, and maintained clean code using GIT.
+                    </p>
+
+                    <div class="experience__desc">
+                        Angular, RxJS, TypeScript, SCSS, GIT, BEM, ApexCharts, Material Design
+                    </div>
+                </div>
+
+                <div class="hr"></div>
+
+                <div class="experience__item">
+                    <div class="experience__position">Development of the city &#8226; oct 2020 - may 2022 &#8226; Front end</div>
+                    <p class="experience__text">
+                        Developed a web application for the Capital Repair Department using Angular.
+                        Handled the full project lifecycle: from requirements gathering and analytics to custom design and feature implementation.
+                        Collaborated closely with users and solution architects to optimize processes and automate daily tasks.
+                    </p>
+                    <div class="experience__desc">
+                        Angular, RxJS, TypeScript, SCSS, BEM, GIT
+                    </div>
+                </div>
+
+                <div class="hr"></div>
+
+                <div class="experience__item">
+                    <div class="experience__position">Saasper &#8226; oct 2019 - jun 2020 &#8226; Front end</div>
+                    <p class="experience__text">
+                        Developed a service for additional monetization of mobile devices from scratch.
+                        Built an advertising platform for mobile applications, leveraging Material Design principles to ensure a clean and intuitive UI.
+                        Delivered high-performance and user-friendly interface solutions.
+                    </p>
+                    <div class="experience__desc">
+                        Angular, RxJS, TypeScript, SCSS, BEM, GIT, Material Design, ApexCharts, Ignite UI
+                    </div>
+                </div>
+
+                <div class="hr"></div>
+
+                <div class="experience__item">
+                    <div class="experience__position">Foody Club &#8226; jun 2018 - jun 2019 &#8226; Front end</div>
+                    <p class="experience__text">
+                        Developed web and mobile interfaces for a food delivery service, including applications for users, restaurants, and couriers.
+                        Created intuitive, user-centered interfaces, optimizing overall user experience.
+                        Participated in product iteration planning, incorporating user feedback and business requirements.
+                    </p>
+                    <div class="experience__desc">
+                        React, RxJS, SCSS, BEM, GitLab
+                    </div>
+                </div>
+            </section>
+
+            <section class="examples" id="examples">
+                <h2 class="examples__title">Examples</h2>
+
+                <pre class="experience__code">
+function alphabetPosition(text) {
+  const hash = {};
+  let str = '';
+
+  for (let i = 0; i &lt; 26; i++) {
+    const el = String.fromCharCode((97 + i))
+    hash[el] = i + 1
+  }
+
+  for (let i = 0; i &lt; text.length; i++) {
+    if (text[i].toLowerCase() in hash) {
+      str += hash[text[i].toLowerCase()] + ' '
+    }
+  }
+
+  return str.trim();
+}
+            </pre>
+            </section>
+
+            <footer class="footer">
+                <div class="footer__container container">
+                    <a href="https://rs.school/courses/javascript-ru" target="_blank">
+                        <img src="./images/rs-school-logo.svg" width="150" alt="Icon rs-school" >
+                    </a>
+                    <a href="https://github.com/jijek-com" target="_blank" class="footer__git">jijekcom 2025</a>
+                </div>
+            </footer>
+        </div>
+
+    </main>
+</div>
 
 </body>
 </html>
