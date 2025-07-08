@@ -266,6 +266,9 @@ header {
 }
 
 .footer__git {
+    display: flex;
+    gap: 6px;
+    align-items: center;
     text-decoration: none;
     color: #000;
 }
@@ -312,6 +315,12 @@ pre {
         margin-top: 10px;
         margin-left: 10px;
         padding-left: 10px;
+        margin-right: 10px;
+        padding-right: 10px;
+    }
+
+    .contacts__title, .skills__title, .education__title, .languages__title {
+        border-radius: 10px;
     }
 
     .contacts__list {
