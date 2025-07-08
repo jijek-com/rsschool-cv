@@ -1,0 +1,351 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background: #f5f5f5;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.wrapper {
+    display: flex;
+    max-width: 1000px;
+    margin: 40px auto;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.sidebar {
+    border-radius: 10px 0 0 10px;
+    background: #000;
+    color: #fff;
+    width: 300px;
+    max-height: calc(100vh - 80px);
+    overflow: auto;
+    height: 100%;
+}
+
+.profile .profile__container {
+    padding: 20px 20px 10px;
+}
+
+.profile__img img {
+    width: 100%;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.profile__name {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin-bottom: 5px;
+}
+
+.profile__position {
+    font-size: 14px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.contacts, .skills, .education, .languages {
+    padding-left: 20px;
+    margin-top: 20px;
+}
+
+.contacts__title:before,
+.skills__title:before,
+.education__title:before, .languages__title:before {
+    position: absolute;
+    content: '';
+    width: 30px;
+    height: 30px;
+    bottom: 100%;
+    box-shadow: 15px -15px #ffff;
+    border-radius: 50%;
+    rotate: 90deg;
+    right: 0;
+}
+
+.contacts__title:after,
+.skills__title:after,
+.education__title:after, .languages__title:after {
+    position: absolute;
+    content: '';
+    width: 30px;
+    height: 30px;
+    top: 100%;
+    box-shadow: 15px 15px #ffff;
+    border-radius: 50%;
+    rotate: -90deg;
+    right: 0;
+}
+
+.contacts__title,
+.skills__title,
+.education__title, .languages__title {
+    position: relative;
+    border-radius: 30px 0 0 30px;
+    padding-left: 20px;
+    display: flex;
+    align-self: center;
+    font-size: 16px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    border-bottom: 1px solid #444;
+    background: white;
+    color: #444;
+}
+
+.contacts__list {
+    margin-top: 20px;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
+.contacts__link {
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.contacts__icon {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    background-size: cover;
+}
+
+.contacts__icon.telegram {
+    background-image: url("../images/telegram.png");
+}
+
+.contacts__icon.mail {
+    background-image: url("../images/email.png");
+}
+
+.contacts__icon.discord {
+    background-image: url('../images/discord.png');
+}
+
+.skills__list {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    list-style: none;
+    text-transform: uppercase;
+    padding-left: 20px;
+    padding-right: 10px;
+    color: #fff;
+}
+
+.education__desc {
+    padding-left: 20px;
+}
+
+.languages__desc {
+    text-transform: uppercase;
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+
+.main-content {
+    position: relative;
+    flex: 1;
+    padding: 20px 30px;
+    background: #fff;
+}
+
+header {
+    background: #000;
+    border-radius: 10px;
+    padding: 20px 20px;
+}
+
+.menu .menu__list {
+    font-weight: 600;
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    gap: 16px;
+}
+
+.menu .menu__list a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.about, .experience, .examples {
+    padding: 20px;
+}
+
+.about__title,
+.experience__title, .examples__title {
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+}
+
+.about__text {
+    font-size: 14px;
+    color: #555;
+}
+
+.main-content__max-height {
+    max-height: calc(100vh - 180px);
+    height: 100%;
+    overflow: scroll;
+}
+
+.experience__item {
+    margin-bottom: 15px;
+}
+
+.experience__position {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.experience__company {
+    font-size: 12px;
+    color: #777;
+    margin-bottom: 5px;
+}
+
+.experience__text {
+    margin-top: 6px;
+    font-size: 13px;
+    color: #555;
+}
+
+.experience__desc {
+    margin-top: 8px;
+    font-size: 13px;
+    color: #555;
+}
+
+.hr {
+    margin-top: 12px;
+    margin-bottom: 12px;
+    border-bottom: 1px solid #ddd;
+}
+
+.experience__code {
+    margin-top: 16px;
+}
+
+.footer {
+    padding: 10px 20px 10px;
+}
+
+.footer__container {
+    padding-top: 20px;
+    border-top: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__git {
+    display: flex;
+    gap: 6px;
+    align-items: center;
+    text-decoration: none;
+    color: #000;
+}
+
+pre {
+    margin: 0;
+    padding: 10px;
+    overflow: auto;
+    background: #f8f8f8;
+    border-radius: 4px;
+    white-space: pre-wrap;
+    word-break: break-word;
+}
+
+@media (max-width: 992px) {
+    .wrapper {
+        margin: 0;
+        flex-direction: column;
+    }
+
+    .profile__img {
+        width: 300px;
+    }
+
+    header {
+        position: sticky;
+    }
+
+    .sidebar {
+        width: 100%;
+        max-height: none;
+        border-radius: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .profile {
+        margin: 0 auto;
+    }
+
+    .contacts, .skills, .education, .languages {
+        flex: 1 1 100%;
+        margin-top: 10px;
+        margin-left: 10px;
+        padding-left: 10px;
+        margin-right: 10px;
+        padding-right: 10px;
+    }
+
+    .contacts__title, .skills__title, .education__title, .languages__title {
+        border-radius: 10px;
+    }
+
+    .contacts__list {
+        justify-content: center;
+    }
+
+    .main-content {
+        padding: 15px;
+    }
+
+    .main-content__max-height {
+        max-height: inherit;
+    }
+
+    .contacts__title:before,
+    .skills__title:before,
+    .education__title:before, .languages__title:before {
+        position: inherit;
+        content: inherit;
+    }
+
+    .contacts__title:after,
+    .skills__title:after,
+    .education__title:after, .languages__title:after {
+        position: inherit;
+        content: inherit;
+    }
+}
